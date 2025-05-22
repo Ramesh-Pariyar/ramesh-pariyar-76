@@ -1,4 +1,23 @@
 body {
-font-family: aerial,sans-serif;
-background-color: aqua;
+    font-family: Arial,sans-serif;
+    background-color:white;
+    margin : 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color:aqua;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,1.0);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
