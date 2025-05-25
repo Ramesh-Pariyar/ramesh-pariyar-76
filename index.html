@@ -14,38 +14,38 @@
         
 
         <div class="item">
-            <h2>Samosa</h2>
-            <label>Price: <input type="number" id="tea-price"></label><br>
+            <h2>samosa</h2>
+            <label>Price: <input type="number" id="samosa-price"></label><br>
             <label>Quantity:
-                <button onclick="updateQuantity("tea",1)">+</button>
-                <span>0</span>
-                <button onclick="updateQuantity("tea",-1)">-</button>
+                <button onclick="updateQuantity('samosa',1)">+</button>
+                <span id="samosa-Qnt">0</span>
+                <button onclick="updateQuantity('samosa',-1)">-</button>
             </label><br>
 
-            <label>Total: <span>0</span></label>
+            <label>Total: <span id="samosa-Total">0</span></label>
         </div><br>
 
         <div class="item">
             <h2>Tea</h2>
-            <label>Price: <input></label><br>
+            <label>Price: <input type="number" id="tea-price"></label><br>
             <label>Quantity:
-                <button>+</button>
-                <span>0</span>
-                <button>-</button>
+                <button onclick="updateQuantity('tea',1)">+</button>
+                <span id="tea-Qnt">0</span>
+                <button onclick="updateQuantity('tea',-1)">-</button>
             </label><br>
 
             <label>Total:
-                <span>0</span>
+                <span id="tea-Total">0</span>
             </label>
         </div><br>  
 
         <div class="Summary">
-            <div>Total Price:<span>0</span></div>
-            <div>Vat (13%):<span>0</span></div>
-            <div>Tip (10%):<span>0</span></div>
+            <div>Total Price: <span id="total-price">0</span></div>
+            <div>Vat (13%): <span id="vat">0</span></div>
+            <div>Tip (10%): <span id="tip">0</span></div>
             <br>
-            <div><strong>Grand Total:</strong><span>0</span></div>
-            <button>Calculate Grand Total</button>
+            <div><strong>Grand Total:</strong> <span id="grand-total">0</span></div>
+            <button onclick="calculateTotal()">Calculate Grand Total</button>
 
         </div>
     </div>
